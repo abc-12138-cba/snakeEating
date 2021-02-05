@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier';
+}
+div#main {
+  margin: 100px auto;
+  width: 360px;
+  height: 420px;
+  border: 10px solid black;
+  background-color: #b7d4a8;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+div#main .stage {
+  position: relative;
+  margin: 0 auto;
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+}
+div#main .stage #snake {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+div#main .stage #snake .single {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: 1px solid #b7d4a8;
+}
+div#main .stage #snake .single.head {
+  background-color: red;
+}
+div#main .stage #food {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+div#main .stage #food div {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  transform: rotateX(45deg);
+}
+div#main .score_wrap {
+  display: flex;
+  justify-content: space-around;
+}
